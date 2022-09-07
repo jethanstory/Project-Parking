@@ -28,9 +28,9 @@ public class scr_movement : MonoBehaviour
         //OnBecameInvisible();
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
-        //transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f);
-        transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
-        transform.Translate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
+        transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f);
+        //transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
+        //transform.Translate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
         //Debug.Log("Help");
          
         /*
@@ -44,7 +44,7 @@ public class scr_movement : MonoBehaviour
         {
             transform.Translate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
         }
-        if (IsSidewaysUp() || IsSidewaysDown())
+        else if (IsSidewaysUp() || IsSidewaysDown())
         {
             transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
         }
