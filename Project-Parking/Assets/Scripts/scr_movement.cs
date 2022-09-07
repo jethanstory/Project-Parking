@@ -30,6 +30,7 @@ public class scr_movement : MonoBehaviour
         bc = GetComponent<BoxCollider2D>();
         //transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f);
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
+        transform.Translate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
         //Debug.Log("Help");
          
         /*
