@@ -20,6 +20,7 @@ public class scr_movement : MonoBehaviour
     void Start()
     {
         Debug.Log("HOW");
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

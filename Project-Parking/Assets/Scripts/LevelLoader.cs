@@ -16,6 +16,7 @@ public class LevelLoader : MonoBehaviour
                   //SceneManager.LoadScene ("Level_2");
                   levelChange = true;
                   SceneManager.LoadScene ("YouWon");
+                  Cursor.lockState = CursorLockMode.None;
               }
               else {
                   levelChange = false;
