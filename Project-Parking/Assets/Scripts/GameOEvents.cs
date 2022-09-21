@@ -20,7 +20,7 @@ public class GameOEvents : MonoBehaviour
 
     public void StartGame() 
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("3DLevel_1_Flat"); //Level_1
     }
     public void nextLevel()
     {
