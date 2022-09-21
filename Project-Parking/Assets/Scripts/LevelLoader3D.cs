@@ -7,9 +7,9 @@ public class LevelLoader3D : MonoBehaviour
 {
     private bool levelChange;
    // Start is called before the first frame update
-    void OnTriggerEnter3D(Collider other){
+    void OnTriggerEnter(Collider other){
               //other.name should equal the root of your Player object
-              if (other.name == "ParkingTrigger3D") {
+              if (other.gameObject.tag == "LevelTrigger") {
                   //The scene number to load (in File->Build Settings)
                   //SceneManager.LoadScene ("Level_2");
                   levelChange = true;

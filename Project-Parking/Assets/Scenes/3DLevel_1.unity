@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 178499495}
   m_Layer: 0
   m_Name: ParkingTrigger3D
-  m_TagString: Untagged
+  m_TagString: LevelTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9938,6 +9938,7 @@ GameObject:
   - component: {fileID: 1833135389}
   - component: {fileID: 1833135393}
   - component: {fileID: 1833135394}
+  - component: {fileID: 1833135395}
   m_Layer: 0
   m_Name: 3DPlayer
   m_TagString: Untagged
@@ -10055,6 +10056,18 @@ MonoBehaviour:
   platform:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &1833135395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833135388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e836b7e744c8f4db0fa5e47d27ab72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1847566464
 GameObject:
   m_ObjectHideFlags: 0
