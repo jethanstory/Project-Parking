@@ -35,6 +35,9 @@ public class scr_movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f);
+
+        //transform.Rotate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f);
+        
         //transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
         //transform.Translate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
         //Debug.Log("Help");
@@ -49,10 +52,12 @@ public class scr_movement : MonoBehaviour
         if (IsSidewaysRight() || IsSidewaysLeft())
         {
             transform.Translate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
+            //transform.Rotate(Input.GetAxis("Vertical") * speed * Time.deltaTime, 0f, 0f);
         }
         else if (IsSidewaysUp() || IsSidewaysDown())
         {
             transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
+            //transform.Rotate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0f, 0f);
         }
         //changeLevel = LevelLoader.levelChange;
         
