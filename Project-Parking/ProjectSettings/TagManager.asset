@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - LevelTrigger
+  - CollisionObject
   layers:
   - Default
   - TransparentFX

@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 103734649}
   m_Layer: 0
   m_Name: Car30
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 125504559}
   m_Layer: 0
   m_Name: Car25
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 141904978}
   m_Layer: 0
   m_Name: Car8
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -1708,7 +1708,7 @@ GameObject:
   - component: {fileID: 231743976}
   m_Layer: 0
   m_Name: Car24
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -1803,7 +1803,7 @@ GameObject:
   - component: {fileID: 233416379}
   m_Layer: 0
   m_Name: Car10
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 259243888}
   m_Layer: 0
   m_Name: Wall Left Upper
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -2620,7 +2620,7 @@ GameObject:
   - component: {fileID: 419722151}
   m_Layer: 0
   m_Name: Car27
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -4460,7 +4460,7 @@ GameObject:
   - component: {fileID: 662973257}
   m_Layer: 0
   m_Name: Car15
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -4664,7 +4664,7 @@ GameObject:
   - component: {fileID: 696081061}
   m_Layer: 0
   m_Name: Car23
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -4759,7 +4759,7 @@ GameObject:
   - component: {fileID: 698411101}
   m_Layer: 0
   m_Name: Wall Lower
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -4963,7 +4963,7 @@ GameObject:
   - component: {fileID: 723454277}
   m_Layer: 0
   m_Name: Car11
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5209,7 +5209,7 @@ GameObject:
   - component: {fileID: 895992805}
   m_Layer: 0
   m_Name: Car22
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5304,7 +5304,7 @@ GameObject:
   - component: {fileID: 916224958}
   m_Layer: 0
   m_Name: Car17
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5399,7 +5399,7 @@ GameObject:
   - component: {fileID: 961403331}
   m_Layer: 0
   m_Name: Car1
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5494,7 +5494,7 @@ GameObject:
   - component: {fileID: 962720888}
   m_Layer: 0
   m_Name: Car9
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5589,7 +5589,7 @@ GameObject:
   - component: {fileID: 977082929}
   m_Layer: 0
   m_Name: Wall Left Lower Invis
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5862,7 +5862,7 @@ GameObject:
   - component: {fileID: 1046484062}
   m_Layer: 0
   m_Name: Car3
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -5957,7 +5957,7 @@ GameObject:
   - component: {fileID: 1046607959}
   m_Layer: 0
   m_Name: Car14
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -6052,7 +6052,7 @@ GameObject:
   - component: {fileID: 1080583400}
   m_Layer: 0
   m_Name: Car2
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -6365,7 +6365,7 @@ GameObject:
   - component: {fileID: 1104286872}
   m_Layer: 0
   m_Name: Car21
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -6542,7 +6542,7 @@ GameObject:
   - component: {fileID: 1126767339}
   m_Layer: 0
   m_Name: Car16
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -6778,7 +6778,7 @@ GameObject:
   - component: {fileID: 1145290327}
   m_Layer: 0
   m_Name: Car26
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7117,7 +7117,7 @@ GameObject:
   - component: {fileID: 1279105241}
   m_Layer: 0
   m_Name: Car6
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7212,7 +7212,7 @@ GameObject:
   - component: {fileID: 1285926469}
   m_Layer: 0
   m_Name: Wall Left Lower
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7307,7 +7307,7 @@ GameObject:
   - component: {fileID: 1294282097}
   m_Layer: 0
   m_Name: Car13
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7484,7 +7484,7 @@ GameObject:
   - component: {fileID: 1342154487}
   m_Layer: 0
   m_Name: Car19
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7619,7 +7619,7 @@ GameObject:
   - component: {fileID: 1379798658}
   m_Layer: 0
   m_Name: Car4
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7796,7 +7796,7 @@ GameObject:
   - component: {fileID: 1407015867}
   m_Layer: 0
   m_Name: Car20
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7891,7 +7891,7 @@ GameObject:
   - component: {fileID: 1409888765}
   m_Layer: 0
   m_Name: Car31
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -8422,7 +8422,7 @@ GameObject:
   - component: {fileID: 1475652593}
   m_Layer: 0
   m_Name: Bike1
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -8626,7 +8626,7 @@ GameObject:
   - component: {fileID: 1507578349}
   m_Layer: 0
   m_Name: Car18
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -9111,7 +9111,7 @@ GameObject:
   - component: {fileID: 1565557206}
   m_Layer: 0
   m_Name: Wall Right
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -9383,7 +9383,7 @@ GameObject:
   - component: {fileID: 1580577515}
   m_Layer: 0
   m_Name: Car5
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -9560,7 +9560,7 @@ GameObject:
   - component: {fileID: 1608126657}
   m_Layer: 0
   m_Name: Car28
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -10064,7 +10064,7 @@ GameObject:
   - component: {fileID: 1712259929}
   m_Layer: 0
   m_Name: Car29
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -10324,7 +10324,7 @@ GameObject:
   - component: {fileID: 1767551374}
   m_Layer: 0
   m_Name: Car7
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -10512,7 +10512,7 @@ GameObject:
   - component: {fileID: 1803207434}
   m_Layer: 0
   m_Name: Wall Upper
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -10607,7 +10607,7 @@ GameObject:
   - component: {fileID: 1806104808}
   m_Layer: 0
   m_Name: Car12
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -11248,7 +11248,7 @@ GameObject:
   - component: {fileID: 2073480151}
   m_Layer: 0
   m_Name: Bike2
-  m_TagString: Untagged
+  m_TagString: CollisionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8

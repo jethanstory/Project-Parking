@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using UnityEngine.Collision;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -22,6 +23,18 @@ public class LevelLoader : MonoBehaviour
                   levelChange = false;
               }
           }
+
+    void OnCollisionEnter (UnityEngine.Collision collisionInfo) 
+    {
+       if (collisionInfo.collider.tag == "CollisionObject")
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(2);
+            Debug.Log("HIT");
+            
+        }
+        
+    }
 
     void OnBecameInvisible() {
         //Destroy(PlayerGameObject);
