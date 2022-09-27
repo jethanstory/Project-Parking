@@ -4535,7 +4535,7 @@ MonoBehaviour:
   agent: {fileID: 449531746}
   fpsTarget: {fileID: 0}
   player: {fileID: 893775880}
-  speed: 1
+  speed: 2
   walkRadius: 10
 --- !u!114 &449531745
 MonoBehaviour:
