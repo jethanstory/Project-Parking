@@ -20,6 +20,7 @@ public class RotateMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        //Vector3 movementDirection = new Vector3(horizontalInput, verticalInput, 0);
         //Vector2 movementDirection = new Vector2(horizontalInput, verticalInput);
         movementDirection.Normalize();
 
@@ -29,6 +30,7 @@ public class RotateMovement : MonoBehaviour
         {
             Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, movementDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             //transform.forward = movementDirection;
         }
     }
