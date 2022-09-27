@@ -10,8 +10,6 @@ public class scr_movement : MonoBehaviour
 
     public bool changeLevel;
 
-    
-
     private Rigidbody2D rb;
     private BoxCollider2D bc;
 
@@ -26,6 +24,13 @@ public class scr_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //float horizontal = Input.GetAxis("Horizontal");
+        //float vertical = Input.GetAxis("Vertical");
+
+        //Vector2 lookDirection = new Vector2(horizontal, vertical);
+
+
+        //Quaternion targetRot = Quaternion.FromToRotation(Vector2.up, lookDirection);
         //OnBecameInvisible();
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
