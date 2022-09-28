@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class GameOEvents : MonoBehaviour
 {
+    // public int counter = 0;
+
+    // void awake() 
+    // {
+    //     counter += 1;
+    // }
     // Start is called before the first frame update
     public void MenuGame()
     {
@@ -24,7 +30,8 @@ public class GameOEvents : MonoBehaviour
     }
     public void nextLevel()
     {
-        SceneManager.LoadScene("3DLevel_3"); //Level_2 //3DLevel_2
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene("3DLevel_2"); //Level_2 //3DLevel_2
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //if (counter)
     }
 }

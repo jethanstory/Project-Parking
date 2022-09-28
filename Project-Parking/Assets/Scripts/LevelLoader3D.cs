@@ -14,7 +14,8 @@ public class LevelLoader3D : MonoBehaviour
                   //SceneManager.LoadScene ("Level_2");
                   levelChange = true;
                   Debug.Log("He's done ya again");
-                  SceneManager.LoadScene ("YouWon");
+                  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                  //SceneManager.LoadScene ("YouWon");
                   Cursor.lockState = CursorLockMode.None;
               }
             //   else if (other.tag == "CollisionObject") {
