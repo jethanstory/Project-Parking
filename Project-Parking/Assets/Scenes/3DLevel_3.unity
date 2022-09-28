@@ -5170,6 +5170,7 @@ GameObject:
   - component: {fileID: 542741358}
   - component: {fileID: 542741357}
   - component: {fileID: 542741365}
+  - component: {fileID: 542741366}
   m_Layer: 0
   m_Name: CarAI
   m_TagString: CollisionObject
@@ -5220,7 +5221,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542741355}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32db01a59c2ee9c45826e34279f73c33, type: 3}
   m_Name: 
@@ -5238,7 +5239,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542741355}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f2cb7e5e761d354aa4f8af1a32c949d, type: 3}
   m_Name: 
@@ -5363,6 +5364,28 @@ MonoBehaviour:
   damping: 0
   speed: 0
   walkRadius: 0
+--- !u!114 &542741366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542741355}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548bd6c8b1ddb94a9058384fc5bbf98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsTargetDistance: 10
+  enemyLookDistance: 5
+  attackDistance: 0
+  enemyMovementSpeed: 0
+  damping: 0
+  lightSource: {fileID: 0}
+  fpsTarget: {fileID: 1047288638}
+  fpsWanderTarget: {fileID: 0}
+  lights: []
+  timer: 0
 --- !u!1 &547782739
 GameObject:
   m_ObjectHideFlags: 0
@@ -8623,6 +8646,7 @@ GameObject:
   - component: {fileID: 797073888}
   - component: {fileID: 797073887}
   - component: {fileID: 797073886}
+  - component: {fileID: 797073895}
   m_Layer: 0
   m_Name: CarAICop
   m_TagString: CollisionObject
@@ -8637,16 +8661,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797073884}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9.67}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10.059999}
   m_LocalScale: {x: 1.5, y: 1, z: 2.1}
   m_Children: []
-  m_Father: {fileID: 814758575}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.04, y: 0.536}
+  m_AnchoredPosition: {x: 8.573334, y: 0.536}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797073886
@@ -8816,6 +8840,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797073884}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &797073895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797073884}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b65eb41c81a354fa98a3ca65daa517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damping: 0
+  agent: {fileID: 0}
+  fpsTarget: {fileID: 797073890}
+  player: {fileID: 1559671944}
+  speed: 4
+  walkRadius: 10
 --- !u!1 &802767162
 GameObject:
   m_ObjectHideFlags: 0
@@ -9032,7 +9074,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 542741356}
-  - {fileID: 797073885}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17051,6 +17092,7 @@ GameObject:
   - component: {fileID: 1559671939}
   - component: {fileID: 1559671938}
   - component: {fileID: 1559671937}
+  - component: {fileID: 1559671945}
   m_Layer: 0
   m_Name: 3DPlayer
   m_TagString: Untagged
@@ -17193,6 +17235,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
+--- !u!114 &1559671945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559671936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548bd6c8b1ddb94a9058384fc5bbf98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsTargetDistance: 30
+  enemyLookDistance: 20
+  attackDistance: 0
+  enemyMovementSpeed: 0
+  damping: 10
+  lightSource: {fileID: 0}
+  fpsTarget: {fileID: 797073885}
+  fpsWanderTarget: {fileID: 0}
+  lights: []
+  timer: 0
 --- !u!1 &1560818452
 GameObject:
   m_ObjectHideFlags: 0
