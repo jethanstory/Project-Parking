@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
- 
- public class NavMeshRun : MonoBehaviour {
- 
-     //private Transform player;
+
+
+public class SpaceStolenTrigger : MonoBehaviour
+{
+    //private Transform player;
      private NavMeshAgent myNMagent;
      private float nextTurnTime;
      private Transform startTransform;
@@ -43,7 +44,8 @@ using UnityEngine.SceneManagement;
                 myNMagent.speed = speed;
                 //GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
-                //SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("GameOver");
+                Cursor.lockState = CursorLockMode.None;
                 //GameObject.Find("WanderingEnemy").GetComponent<AttackPlayer>().enabled = false;
                 //GameObject.Find("WanderingEnemy").GetComponent<WanderingEnemyAI>().enabled = false;
                 //RunFrom();
@@ -130,5 +132,4 @@ using UnityEngine.SceneManagement;
         }
     }
 
-    //maybe on trigger leave, wait for an amount of time and then renable the disabled stuff above!!
 }

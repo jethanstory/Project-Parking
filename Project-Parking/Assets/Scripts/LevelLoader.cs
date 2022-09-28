@@ -19,22 +19,31 @@ public class LevelLoader : MonoBehaviour
                   SceneManager.LoadScene ("YouWon");
                   Cursor.lockState = CursorLockMode.None;
               }
+              else if (other.tag == "CollisionObject") {
+                  //The scene number to load (in File->Build Settings)
+                  //SceneManager.LoadScene ("Level_2");
+                  levelChange = true;
+                  Debug.Log("HIT");
+                  SceneManager.LoadScene ("GameOver");
+                  Cursor.lockState = CursorLockMode.None;
+              }
               else {
                   levelChange = false;
               }
           }
+      
 
-    void OnCollisionEnter (UnityEngine.Collision collisionInfo) 
-    {
-       if (collisionInfo.collider.tag == "CollisionObject")
-        {
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene(2);
-            Debug.Log("HIT");
+    // void OnCollisionEnter (UnityEngine.Collision collisionInfo) 
+    // {
+    //    if (collisionInfo.collider.tag == "CollisionObject")
+    //     {
+    //         Cursor.lockState = CursorLockMode.None;
+    //         SceneManager.LoadScene("GameOver");
+    //         Debug.Log("HIT");
             
-        }
+    //     }
         
-    }
+    // }
 
     void OnBecameInvisible() {
         //Destroy(PlayerGameObject);
