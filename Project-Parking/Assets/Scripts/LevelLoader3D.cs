@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader3D : MonoBehaviour
 {
+
+    
     private bool levelChange;
    // Start is called before the first frame update
+
+
+   void Start ()
+   {
+
+   }
     void OnTriggerEnter(Collider other){
               //other.name should equal the root of your Player object
               if (other.gameObject.tag == "LevelTrigger") {
@@ -43,14 +51,14 @@ public class LevelLoader3D : MonoBehaviour
         
     }
 
-    void OnBecameInvisible() {
-        //Destroy(PlayerGameObject);
-        //Application.Quit();
+    // void OnBecameInvisible() {
+    //     //Destroy(PlayerGameObject);
+    //     //Application.Quit();
 
-        if (levelChange == false) {
-            SceneManager.LoadScene("GameOver");
-            Debug.Log("He's done ya again");
-        }
+    //     if (levelChange == false) {
+    //         SceneManager.LoadScene("GameOver");
+    //         Debug.Log("He's done ya again");
+    //     }
         /*
         else {
             
@@ -60,5 +68,5 @@ public class LevelLoader3D : MonoBehaviour
             
         }
         */
-    }
+    //}
 }
