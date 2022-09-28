@@ -33,6 +33,15 @@ public class RotateMovement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             //transform.forward = movementDirection;
+            if (Input.GetKey("left shift"))
+            {
+            speed = 8f; //20
+            }
+            else
+            {
+                speed = 4f; //12
+            }
         }
+ 
     }
 }
