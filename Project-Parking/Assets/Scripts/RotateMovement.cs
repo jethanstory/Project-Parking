@@ -31,17 +31,26 @@ public class RotateMovement : MonoBehaviour
             //Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, movementDirection);3
             Quaternion toRotation = Quaternion.LookRotation(Vector3.up, movementDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            //speed += 0.1f; //0.01f
+            
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             //transform.forward = movementDirection;
+
+
             if (Input.GetKey("left shift"))
             {
-            speed = 8f; //20
+            speed += 0.07f; //8f; //20
             }
             else
             {
                 speed = 4f; //12
             }
         }
+
+        // else 
+        // {
+        //     speed = 4f;
+        // }
  
     }
 }
