@@ -27,6 +27,7 @@ public class AdvancedWanderAI : MonoBehaviour
         if (agent != null)
         {
             agent.speed = speed;
+            agent.avoidancePriority = 0;
             agent.SetDestination(RandomNavMeshLocation());
         }
     }
