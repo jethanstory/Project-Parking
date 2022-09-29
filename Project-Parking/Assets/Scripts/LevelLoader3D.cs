@@ -44,7 +44,7 @@ public class LevelLoader3D : MonoBehaviour
        if (collisionInfo.collider.tag == "CollisionObject")
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("YouCrashed");
             Debug.Log("HIT");
             
         }

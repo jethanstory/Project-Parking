@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 75f9748ffb3030c428af0998b9cc51f9
+  - enabled: 1
+    path: Assets/Scenes/3DMainMenu.unity
+    guid: 632af1b66c7781a488bce9f814d66d72
   - enabled: 1
     path: Assets/Scenes/3DLevel_1_Flat.unity
     guid: 10654748e69c8b5488948a081f2b03b3
@@ -35,4 +38,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/3DLevel_1_Isometric.unity
     guid: c0059c8abb402ab4e960634aa3cfe1fc
+  - enabled: 1
+    path: Assets/Scenes/YouCrashed.unity
+    guid: b1334be0138f5cf4ea2a7063d0885caf
   m_configObjects: {}
