@@ -1,3 +1,6 @@
+/*
+    Script that disables the CarAI following enemy gameobject on collision with parking space trigger.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,6 @@
+/*
+    Script that loads next level on player going into a parking space 
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

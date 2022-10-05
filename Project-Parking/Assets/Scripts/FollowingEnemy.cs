@@ -1,3 +1,7 @@
+/*
+    Script for having the Car AI proceed to the parking space
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

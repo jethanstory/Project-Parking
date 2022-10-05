@@ -1,3 +1,6 @@
+/*
+    Script to check to see if space trigger has been tripped by the other car and switches to Game Over scene if true. 
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

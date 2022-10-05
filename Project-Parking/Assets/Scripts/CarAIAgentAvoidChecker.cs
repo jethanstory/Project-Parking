@@ -1,9 +1,14 @@
+/*
+    Script to check to see if other AI Agent is too close to the current AI Agent,
+    if so then Enable AIAvoidRunAway and Disable AdvancedWanderAI GameObject on the current AI Agent 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AIAgentAvoidChecker : MonoBehaviour
+public class CarAIAgentAvoidChecker : MonoBehaviour
 {
     public float fpsTargetDistance;
     public float enemyLookDistance;
@@ -46,6 +51,7 @@ public class AIAgentAvoidChecker : MonoBehaviour
             //Disables the Advanced Wander AI script and the NavMeshAgent script so the enemy stops when you are in range. 
             GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
             GameObject.Find("CarAI").GetComponent<AIAvoidRunAway>().enabled = true;
+             
             //gameObject.GetComponent<NavMeshAgent>().enabled = false;
             //lookAtPlayer();
             
@@ -60,6 +66,7 @@ public class AIAgentAvoidChecker : MonoBehaviour
         else{
             GameObject.Find("CarAI").GetComponent<AIAvoidRunAway>().enabled = false;
             GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = true;
+             
             //gameObject.GetComponent<NavMeshAgent>().enabled = true;
             
             

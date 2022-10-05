@@ -1,3 +1,7 @@
+/*
+    Script for having the parking cop AI chase after the player
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

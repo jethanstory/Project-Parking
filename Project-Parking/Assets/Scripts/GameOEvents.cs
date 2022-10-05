@@ -15,7 +15,7 @@ public class GameOEvents : MonoBehaviour
     // Start is called before the first frame update
     public void MenuGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("3DMainMenu");
     }
 
     // Update is called once per frame

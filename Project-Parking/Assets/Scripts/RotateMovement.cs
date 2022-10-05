@@ -1,3 +1,7 @@
+/*
+    Script for player movement and rotation
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
