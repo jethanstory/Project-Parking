@@ -31,19 +31,6 @@ public class ChasePlayer : MonoBehaviour
         }
     }
 
-    /*public Vector3 RandomNavMeshLocation()
-    {
-        Vector3 finalPosition = Vector3.zero;
-        Vector3 randomPosition = Random.insideUnitSphere * walkRadius;
-        randomPosition += transform.position;
-        if (NavMesh.SamplePosition(randomPosition, out NavMeshHit hit, walkRadius, 1)) {
-            finalPosition = hit.position;
-        }
-        return finalPosition;
-    } */
-
-
-
     // Update is called once per frame
     void Update()
     {

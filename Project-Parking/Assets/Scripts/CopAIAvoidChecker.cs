@@ -9,28 +9,13 @@ public class CopAIAvoidChecker : MonoBehaviour
 {
     public float fpsTargetDistance;
     public float enemyLookDistance;
-    public float attackDistance;
-    public float enemyMovementSpeed;
     public float damping;
 
-    public GameObject lightSource;
     public Transform fpsTarget;
     public Transform fpsWanderTarget;
     Rigidbody theRigidBody;
 
-    //public Transform stuckCheck;
-    //Renderer myRenderer;
-
-    private bool lightEnabled;
-    //public GameObject[] sounds;
-    public GameObject[] lights;
-
-    //public bool timerStarted = true;
     public float timer = 0.0f;
-
-    //public AudioSource audioSource;
-
-    //private Light enemyLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,30 +33,11 @@ public class CopAIAvoidChecker : MonoBehaviour
             //Disables the Advanced Wander AI script and the NavMeshAgent script so the enemy stops when you are in range. 
             GameObject.Find("CarAICop").GetComponent<AdvancedWanderAI>().enabled = false;
             GameObject.Find("CarAICop").GetComponent<AIAvoidRunAway>().enabled = true;
-             
-            //gameObject.GetComponent<NavMeshAgent>().enabled = false;
-            //lookAtPlayer();
-            
-            //if (fpsTargetDistance < attackDistance) {
-                //GameObject.Find("WanderingEnemy").GetComponent<FollowingEnemy>().enabled = false;
-                //GameObject.Find("WanderingEnemy").GetComponent<AttackPlayer>().enabled = true;
-                //myRenderer.material.color = Color.red;
-                //attackPlease();
-            //}
         }
         
         else{
             GameObject.Find("CarAICop").GetComponent<AIAvoidRunAway>().enabled = false;
             GameObject.Find("CarAICop").GetComponent<AdvancedWanderAI>().enabled = true;
-             
-            //gameObject.GetComponent<NavMeshAgent>().enabled = true;
-            
-            
-            //Wander to player position
-            //WandertoPlacePlease();
-
-            //myRenderer.material.color = Color.blue;
-            //enemyLight.color = Color.white;
           
         }
 }
