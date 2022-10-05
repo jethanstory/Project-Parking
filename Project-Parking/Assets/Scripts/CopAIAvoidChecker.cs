@@ -1,3 +1,6 @@
+/*
+    Script for parking cop AI to check to see if other AI agent is too close, if so then activate avoidance script
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
