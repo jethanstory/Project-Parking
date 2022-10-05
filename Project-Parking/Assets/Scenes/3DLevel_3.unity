@@ -5171,6 +5171,8 @@ GameObject:
   - component: {fileID: 542741357}
   - component: {fileID: 542741365}
   - component: {fileID: 542741366}
+  - component: {fileID: 542741367}
+  - component: {fileID: 542741368}
   m_Layer: 0
   m_Name: CarAI
   m_TagString: CollisionObject
@@ -5386,6 +5388,45 @@ MonoBehaviour:
   fpsWanderTarget: {fileID: 0}
   lights: []
   timer: 0
+--- !u!114 &542741367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542741355}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b3f5d14b660542bb370ea4a5a337c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsTargetDistance: 30
+  enemyLookDistance: 5
+  attackDistance: 0
+  enemyMovementSpeed: 0
+  damping: 10
+  lightSource: {fileID: 0}
+  fpsTarget: {fileID: 797073885}
+  fpsWanderTarget: {fileID: 0}
+  lights: []
+  timer: 0
+--- !u!114 &542741368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542741355}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6d2ebd1bfc013419e2d810808fed52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 542741356}
+  multiplyBy: 1
+  damping: 10
+  speed: 3
+  walkRadius: 100
 --- !u!1 &547782739
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,6 +8688,8 @@ GameObject:
   - component: {fileID: 797073887}
   - component: {fileID: 797073886}
   - component: {fileID: 797073895}
+  - component: {fileID: 797073897}
+  - component: {fileID: 797073896}
   m_Layer: 0
   m_Name: CarAICop
   m_TagString: CollisionObject
@@ -8858,6 +8901,45 @@ MonoBehaviour:
   player: {fileID: 1559671944}
   speed: 4
   walkRadius: 10
+--- !u!114 &797073896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797073884}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6d2ebd1bfc013419e2d810808fed52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 797073885}
+  multiplyBy: 1
+  damping: 10
+  speed: 3
+  walkRadius: 100
+--- !u!114 &797073897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797073884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b3f5d14b660542bb370ea4a5a337c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsTargetDistance: 30
+  enemyLookDistance: 5
+  attackDistance: 0
+  enemyMovementSpeed: 0
+  damping: 10
+  lightSource: {fileID: 0}
+  fpsTarget: {fileID: 542741356}
+  fpsWanderTarget: {fileID: 0}
+  lights: []
+  timer: 0
 --- !u!1 &802767162
 GameObject:
   m_ObjectHideFlags: 0
