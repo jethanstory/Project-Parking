@@ -12,6 +12,8 @@ public class SpeedingCheck : MonoBehaviour
     public float enemyMovementSpeed;
     public float damping;
 
+    public GameObject sound;
+
     public Transform fpsTarget;
     public Transform fpsWanderTarget;
     Rigidbody theRigidBody;
@@ -43,13 +45,14 @@ public class SpeedingCheck : MonoBehaviour
             GameObject.Find("CarAICop").GetComponent<ChasePlayer>().enabled = true;
             lightSource.SetActive(true);
             GameObject.Find("CarAICop").GetComponent<FlashingLight>().enabled = true;
-
+            sound.SetActive(true);
            
             }
             
         }
         
         else{
+            sound.SetActive(false);
             lightSource.SetActive(false);
             GameObject.Find("CarAICop").GetComponent<ChasePlayer>().enabled = false;
             GameObject.Find("CarAICop").GetComponent<AdvancedWanderAI>().enabled = true;
