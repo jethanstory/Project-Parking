@@ -51,6 +51,10 @@ public class RotateMovement : MonoBehaviour
                     speed -= 0.1f; //0.3f    //4f; //12
             }
         }
+        else
+        {
+            speed = 4f;
+        }
 
         // else 
         // {
