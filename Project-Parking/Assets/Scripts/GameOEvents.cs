@@ -15,6 +15,7 @@ public class GameOEvents : MonoBehaviour
     // Start is called before the first frame update
     public void MenuGame()
     {
+        Debug.Log("Menu");
         SceneManager.LoadScene("3DMainMenu");
     }
 
@@ -36,6 +37,7 @@ public class GameOEvents : MonoBehaviour
     }
     public void RestartGame() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Restart");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //.buildIndex
     }
 }
