@@ -37,12 +37,12 @@ public class CarAIAgentAvoidChecker : MonoBehaviour
             //myRenderer.material.color = Color.yellow;
             //Disables the Advanced Wander AI script and the NavMeshAgent script so the enemy stops when you are in range. 
             GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
-            GameObject.Find("CarAI").GetComponent<AIAvoidRunAway>().enabled = true;
+            //GameObject.Find("CarAI").GetComponent<AIAvoidRunAway>().enabled = true;
         }
         
         else{
             GameObject.Find("CarAI").GetComponent<AIAvoidRunAway>().enabled = false;
-            GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = true;
+            //GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = true;
         }
 }
 }

@@ -20,6 +20,8 @@ public class SpaceStolenTrigger : MonoBehaviour
  
      public float multiplyBy;
      public float damping;
+
+     public GameObject canvas;
     
     [Range(0, 500)] public float speed; //100
     [Range(1, 500)] public float walkRadius;
@@ -28,9 +30,9 @@ public class SpaceStolenTrigger : MonoBehaviour
      void Start () {
  
          //player = GameObject.FindGameObjectWithTag("thrownFlare").transform;
-         myNMagent = GetComponent<NavMeshAgent> ();
-         canRun = false;
-
+        myNMagent = GetComponent<NavMeshAgent> ();
+        canRun = false;
+        canvas.SetActive(false);
          
  
          //RunFrom ();
@@ -46,8 +48,13 @@ public class SpaceStolenTrigger : MonoBehaviour
             if(Time.time > nextTurnTime)
                 myNMagent.speed = speed;
                 //GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
+                canvas.SetActive(true);
+                GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
-                SceneManager.LoadScene("GameOver");
+                GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
+                GameObject.Find("CarAICop").GetComponent<AdvancedWanderAI>().enabled = false;
+                GameObject.Find("CarAICop").GetComponent<ChasePlayer>().enabled = false;
+                //SceneManager.LoadScene("GameOver");
                 Cursor.lockState = CursorLockMode.None;
                 //GameObject.Find("WanderingEnemy").GetComponent<AttackPlayer>().enabled = false;
                 //GameObject.Find("WanderingEnemy").GetComponent<WanderingEnemyAI>().enabled = false;

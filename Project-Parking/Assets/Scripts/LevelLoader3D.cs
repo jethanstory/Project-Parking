@@ -9,14 +9,14 @@ using UnityEngine.SceneManagement;
 public class LevelLoader3D : MonoBehaviour
 {
 
-    
+    public GameObject canvas;
     private bool levelChange;
    // Start is called before the first frame update
 
 
    void Start ()
    {
-
+        canvas.SetActive(false);
    }
     void OnTriggerEnter(Collider other){
               //other.name should equal the root of your Player object
@@ -47,7 +47,9 @@ public class LevelLoader3D : MonoBehaviour
        if (collisionInfo.collider.tag == "CollisionObject")
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("YouCrashed");
+            canvas.SetActive(true);
+            GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
+            //SceneManager.LoadScene("YouCrashed");
             Debug.Log("HIT");
             
         }
