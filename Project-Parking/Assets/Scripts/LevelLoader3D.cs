@@ -10,6 +10,7 @@ public class LevelLoader3D : MonoBehaviour
 {
 
     public GameObject canvas;
+    public GameObject canvas2;
     private bool levelChange;
    // Start is called before the first frame update
 
@@ -20,15 +21,17 @@ public class LevelLoader3D : MonoBehaviour
    }
     void OnTriggerEnter(Collider other){
               //other.name should equal the root of your Player object
-              if (other.gameObject.tag == "LevelTrigger") {
-                  //The scene number to load (in File->Build Settings)
-                  //SceneManager.LoadScene ("Level_2");
-                  levelChange = true;
-                  Debug.Log("He's done ya again");
-                  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                  //SceneManager.LoadScene ("YouWon");
-                  Cursor.lockState = CursorLockMode.None;
-              }
+            if (other.gameObject.tag == "LevelTrigger") {
+                //The scene number to load (in File->Build Settings)
+                //SceneManager.LoadScene ("Level_2");
+                levelChange = true;
+                Debug.Log("He's done ya again");
+                canvas2.SetActive(true);
+                GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                //SceneManager.LoadScene ("YouWon");
+                Cursor.lockState = CursorLockMode.None;
+            }
             //   else if (other.tag == "CollisionObject") {
             //       //The scene number to load (in File->Build Settings)
             //       //SceneManager.LoadScene ("Level_2");
@@ -37,9 +40,9 @@ public class LevelLoader3D : MonoBehaviour
             //       SceneManager.LoadScene ("GameOver");
             //       Cursor.lockState = CursorLockMode.None;
             //   }
-              else {
-                  levelChange = false;
-              }
+            else {
+                levelChange = false;
+            }
           }
 
     void OnCollisionEnter (UnityEngine.Collision collisionInfo) 
@@ -49,6 +52,10 @@ public class LevelLoader3D : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             canvas.SetActive(true);
             GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
+            GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
+            GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
+            GameObject.Find("CarAICop").GetComponent<AdvancedWanderAI>().enabled = false;
+            GameObject.Find("CarAICop").GetComponent<ChasePlayer>().enabled = false;
             //SceneManager.LoadScene("YouCrashed");
             Debug.Log("HIT");
             

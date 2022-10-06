@@ -29,7 +29,7 @@ public class GameOEvents : MonoBehaviour
     {
         SceneManager.LoadScene("3DLevel_1_Flat"); //Level_1
     }
-    public void nextLevel()
+    public void NextLevel()
     {
         //SceneManager.LoadScene("3DLevel_2"); //Level_2 //3DLevel_2
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
