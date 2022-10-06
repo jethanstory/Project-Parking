@@ -12,7 +12,7 @@ public class SpaceFinderAI : MonoBehaviour
 
     public GameObject lightSource;
     public Transform fpsTarget;
-    public Transform fpsWanderTarget;
+    //public Transform fpsWanderTarget;
     Rigidbody theRigidBody;
 
     //public Transform stuckCheck;

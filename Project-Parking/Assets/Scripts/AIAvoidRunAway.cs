@@ -13,7 +13,6 @@ public class AIAvoidRunAway : MonoBehaviour
      private NavMeshAgent myNMagent;
      private float nextTurnTime;
      private Transform startTransform;
-     bool canRun;
 
      public Transform player;
  
@@ -28,7 +27,6 @@ public class AIAvoidRunAway : MonoBehaviour
  
          //player = GameObject.FindGameObjectWithTag("thrownFlare").transform;
          myNMagent = GetComponent<NavMeshAgent> ();
-         canRun = false;
 
          
  
