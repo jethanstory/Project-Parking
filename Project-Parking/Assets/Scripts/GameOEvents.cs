@@ -40,4 +40,8 @@ public class GameOEvents : MonoBehaviour
         Debug.Log("Restart");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //.buildIndex
     }
+    public void CreditsLoad() 
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //.buildIndex
+    }
 }
