@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GoalSystemScr : MonoBehaviour
 {
@@ -16,11 +17,15 @@ public class GoalSystemScr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        secondsCount += Time.deltaTime;
+        Scene currentScene = SceneManager.GetActiveScene ();
 
+        string sceneName = currentScene.name;
+        secondsCount += Time.deltaTime;
+        
         if (secondsCount > 5) 
         {
             text.SetActive(false);
         }
+        
     }
 }
