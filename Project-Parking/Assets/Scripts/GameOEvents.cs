@@ -42,6 +42,6 @@ public class GameOEvents : MonoBehaviour
     }
     public void CreditsLoad() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //.buildIndex
+        SceneManager.LoadScene("Credits");
     }
 }

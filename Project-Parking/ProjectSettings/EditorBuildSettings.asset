@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3DLevel_3.unity
     guid: 523435d2c8bcb7547a1ebfcbc13bd7ae
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: c4f263ce44856c94bbd4c7fdc1ef2f84
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 5da7c5d34789bff48ae37a8b359aaabf
   - enabled: 0
