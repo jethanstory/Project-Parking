@@ -11,7 +11,9 @@ public class SpaceFinderAI : MonoBehaviour
     public float damping;
 
     public GameObject lightSource;
+    // public Transform fpsTarget;
     public Transform fpsTarget;
+
     //public Transform fpsWanderTarget;
     Rigidbody theRigidBody;
 
