@@ -22,6 +22,7 @@ public class SpaceStolenTrigger : MonoBehaviour
      public float damping;
 
      public GameObject canvas;
+     public GameObject loseSound;
     
     [Range(0, 500)] public float speed; //100
     [Range(1, 500)] public float walkRadius;
@@ -33,6 +34,7 @@ public class SpaceStolenTrigger : MonoBehaviour
         myNMagent = GetComponent<NavMeshAgent> ();
         canRun = false;
         canvas.SetActive(false);
+        loseSound.SetActive(false);
          
  
          //RunFrom ();
@@ -49,6 +51,7 @@ public class SpaceStolenTrigger : MonoBehaviour
                 myNMagent.speed = speed;
                 //GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
                 canvas.SetActive(true);
+                loseSound.SetActive(true);
                 GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
