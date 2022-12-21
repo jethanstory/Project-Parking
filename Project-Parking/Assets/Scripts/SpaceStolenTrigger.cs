@@ -11,24 +11,25 @@ using UnityEngine.SceneManagement;
 public class SpaceStolenTrigger : MonoBehaviour
 {
     //private Transform player;
-     private NavMeshAgent myNMagent;
-     private float nextTurnTime;
-     private Transform startTransform;
-     bool canRun;
+    private NavMeshAgent myNMagent;
+    private float nextTurnTime;
+    private Transform startTransform;
+    bool canRun;
 
-     public Transform player;
+    public Transform player;
  
-     public float multiplyBy;
-     public float damping;
+    public float multiplyBy;
+    public float damping;
 
-     public GameObject canvas;
-     public GameObject loseSound;
+    public GameObject canvas;
+    public GameObject loseSound;
+    public GameObject mainTheme;
     
     [Range(0, 500)] public float speed; //100
     [Range(1, 500)] public float walkRadius;
  
      // Use this for initialization
-     void Start () {
+    void Start () {
  
          //player = GameObject.FindGameObjectWithTag("thrownFlare").transform;
         myNMagent = GetComponent<NavMeshAgent> ();
@@ -41,9 +42,9 @@ public class SpaceStolenTrigger : MonoBehaviour
      }
      
      // Update is called once per frame
-     void Update () {
+    void Update () {
 
-         if(canRun == true) // if you enter thecollider of the objecct
+        if(canRun == true) // if you enter thecollider of the objecct
         {
  
          // used for testing - can be ignored
@@ -52,6 +53,7 @@ public class SpaceStolenTrigger : MonoBehaviour
                 //GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
                 canvas.SetActive(true);
                 loseSound.SetActive(true);
+                mainTheme.SetActive(false);
                 GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;

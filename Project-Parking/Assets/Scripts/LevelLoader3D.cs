@@ -13,6 +13,7 @@ public class LevelLoader3D : MonoBehaviour
     public GameObject canvas2;
     public GameObject crashSound;
     public GameObject winSound;
+    public GameObject mainTheme;
     private bool levelChange;
    // Start is called before the first frame update
 
@@ -22,6 +23,7 @@ public class LevelLoader3D : MonoBehaviour
         canvas.SetActive(false);
         crashSound.SetActive(false);
         winSound.SetActive(false);
+        
    }
     void OnTriggerEnter(Collider other){
               //other.name should equal the root of your Player object
@@ -32,6 +34,7 @@ public class LevelLoader3D : MonoBehaviour
                 Debug.Log("He's done ya again");
                 canvas2.SetActive(true);
                 winSound.SetActive(true);
+                mainTheme.SetActive(false);
                 GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 //SceneManager.LoadScene ("YouWon");
@@ -57,6 +60,7 @@ public class LevelLoader3D : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             canvas.SetActive(true);
             crashSound.SetActive(true);
+            mainTheme.SetActive(false);
             GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
             GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
             GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
