@@ -3417,7 +3417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294784245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.45, y: -4.52, z: -0.37}
+  m_LocalPosition: {x: 8.47, y: -4.52, z: -0.37}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 196949830}
@@ -5072,7 +5072,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5262,7 +5262,7 @@ GameObject:
   - component: {fileID: 437494778}
   - component: {fileID: 437494777}
   m_Layer: 0
-  m_Name: ParkingTrigger3D
+  m_Name: ParkingTrigger3DAI
   m_TagString: LevelTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5276,7 +5276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437494775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -0.65, z: -0.02}
+  m_LocalPosition: {x: -0.01, y: -0.65, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 333225370}
@@ -5484,7 +5484,7 @@ MonoBehaviour:
   damping: 10
   agent: {fileID: 449531746}
   fpsTarget: {fileID: 0}
-  player: {fileID: 893775880}
+  player: {fileID: 437494776}
   speed: 3
   walkRadius: 10
 --- !u!114 &449531745
@@ -7393,7 +7393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659531331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.43, y: -7.32, z: -0.37}
+  m_LocalPosition: {x: 6.43, y: -7.622, z: -0.37}
   m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 196949830}
@@ -17496,7 +17496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802601559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.43, y: -4.52, z: -0.37}
+  m_LocalPosition: {x: 0.41, y: -4.52, z: -0.37}
   m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 196949830}
@@ -19977,7 +19977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132886175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.38, y: -4.29, z: -0.37}
+  m_LocalPosition: {x: 2.357, y: -4.29, z: -0.37}
   m_LocalScale: {x: 1.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 196949830}
