@@ -54,6 +54,7 @@ public class SpaceStolenTrigger : MonoBehaviour
                 canvas.SetActive(true);
                 loseSound.SetActive(true);
                 mainTheme.SetActive(false);
+                GameObject.Find("3DPlayer").GetComponent<PauseMenuScr>().enabled = false;
                 GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
                 GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;

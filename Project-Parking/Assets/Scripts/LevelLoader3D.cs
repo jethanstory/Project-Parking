@@ -36,6 +36,7 @@ public class LevelLoader3D : MonoBehaviour
                 winSound.SetActive(true);
                 mainTheme.SetActive(false);
                 GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
+                GameObject.Find("3DPlayer").GetComponent<PauseMenuScr>().enabled = false;
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 //SceneManager.LoadScene ("YouWon");
                 Cursor.lockState = CursorLockMode.None;
@@ -61,6 +62,7 @@ public class LevelLoader3D : MonoBehaviour
             canvas.SetActive(true);
             crashSound.SetActive(true);
             mainTheme.SetActive(false);
+            GameObject.Find("3DPlayer").GetComponent<PauseMenuScr>().enabled = false;
             GameObject.Find("3DPlayer").GetComponent<RotateMovement>().enabled = false;
             GameObject.Find("CarAI").GetComponent<FollowingEnemy>().enabled = false;
             GameObject.Find("CarAI").GetComponent<AdvancedWanderAI>().enabled = false;
