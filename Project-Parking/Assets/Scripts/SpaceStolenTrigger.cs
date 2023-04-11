@@ -14,7 +14,7 @@ public class SpaceStolenTrigger : MonoBehaviour
     private NavMeshAgent myNMagent;
     private float nextTurnTime;
     private Transform startTransform;
-    bool canRun;
+    public bool canRun;
 
     public Transform player;
  
@@ -48,8 +48,10 @@ public class SpaceStolenTrigger : MonoBehaviour
         {
  
          // used for testing - can be ignored
-            if(Time.time > nextTurnTime)
-                myNMagent.speed = speed;
+
+            // if(Time.time > nextTurnTime)
+            //     myNMagent.speed = speed;
+
                 //GameObject.Find("WanderingEnemy").GetComponent<AdvancedWanderAI>().enabled = false;
                 canvas.SetActive(true);
                 loseSound.SetActive(true);

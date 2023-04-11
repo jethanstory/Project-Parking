@@ -15,6 +15,8 @@ public class LevelLoader3D : MonoBehaviour
     public GameObject winSound;
     public GameObject mainTheme;
     private bool levelChange;
+
+    public bool hasCrashed;
    // Start is called before the first frame update
 
 
@@ -58,6 +60,7 @@ public class LevelLoader3D : MonoBehaviour
     {
        if (collisionInfo.collider.tag == "CollisionObject")
         {
+            hasCrashed = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             canvas.SetActive(true);
