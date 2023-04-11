@@ -1362,7 +1362,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 582562084}
         m_TargetAssemblyTypeName: GameOEvents, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
@@ -6750,6 +6750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2db62f2cbfbaf4a95f0563039de17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canRun: 0
   player: {fileID: 0}
   multiplyBy: 0
   damping: 0
@@ -10736,6 +10737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2db62f2cbfbaf4a95f0563039de17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canRun: 0
   player: {fileID: 0}
   multiplyBy: 0
   damping: 0
@@ -17885,7 +17887,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 582562084}
         m_TargetAssemblyTypeName: GameOEvents, Assembly-CSharp
         m_MethodName: MenuGame
         m_Mode: 1
@@ -18355,7 +18357,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 582562084}
         m_TargetAssemblyTypeName: GameOEvents, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -21280,6 +21282,7 @@ MonoBehaviour:
   crashSound: {fileID: 1419023461}
   winSound: {fileID: 476513686}
   mainTheme: {fileID: 1645625878}
+  hasCrashed: 0
 --- !u!114 &1559671939
 MonoBehaviour:
   m_ObjectHideFlags: 0
